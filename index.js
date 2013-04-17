@@ -252,7 +252,7 @@ Command.prototype.action = function(fn){
     }
     
     fn.apply(this, args);
-  });
+  };
   this._name.split('|').forEach(function(name) {
     self.parent.on(name, actionHandler);
   });
